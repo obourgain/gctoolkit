@@ -91,7 +91,7 @@ public class Decorators {
         if (line.charAt(0) != '[') {
             return;
         }
-        // don't assign fields until we are done parsing, to avoid inconsistent state
+        // To avoid inconsistent state, don't assign fields until we are done parsing.
         int numberOfDecorators = 0;
         for (int i = 0; i < line.length() - 1; i++) {
             if (line.charAt(i) == ']') {
