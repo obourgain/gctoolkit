@@ -59,7 +59,7 @@ public class Decorators {
 
     private static final Logger LOGGER = Logger.getLogger(Decorators.class.getName());
 
-    // cheap optim, assume that most logs are at info or debug level and thus put those at the head of the list
+    // Predictive optimization, assume that most logs are at info or debug level and thus put those at the head of the list
     private static final List<String> LEVELS = List.of("info", "debug", "error", "warning", "trace", "develop");
     // not the same as UnifiedLoggingTokens.TAGS as there is no literal brackets here
     private static final Pattern TAGS = Pattern.compile("[a-z0-9,. ]+");
