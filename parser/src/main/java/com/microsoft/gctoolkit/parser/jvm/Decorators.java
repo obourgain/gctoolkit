@@ -61,7 +61,7 @@ public class Decorators {
 
     // Predictive optimization, assume that most logs are at info or debug level and thus put those at the head of the list
     private static final List<String> LEVELS = List.of("info", "debug", "error", "warning", "trace", "develop");
-    // not the same as UnifiedLoggingTokens.TAGS as there is no literal brackets here
+    // This is *not* the same as UnifiedLoggingTokens.TAGS as there are no literal brackets here
     private static final Pattern TAGS = Pattern.compile("[a-z0-9,. ]+");
 
     // This is to help differentiate between JVM running time and wall clock time.
